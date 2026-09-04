@@ -1,0 +1,141 @@
+payment_id,timestamp,event_type,failure_code,diagnosis,action_taken,retry_count,compliance_check_result,llm_reasoning,resulting_state
+pay_3gyrDO1xkxwnQr,2026-08-07 18:56:00,INGESTION,CARD_EXPIRED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_3gyrDO1xkxwnQr,2026-08-07 18:56:00,EXHAUSTED,CARD_EXPIRED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_TunPFz46PDjqip,2026-08-09 17:55:00,INGESTION,CHECKOUT_ABANDONED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_TunPFz46PDjqip,2026-08-09 17:55:00,EXHAUSTED,CHECKOUT_ABANDONED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_8aRUhR4IWrXPvh,2026-08-04 14:56:00,INGESTION,INSUFFICIENT_FUNDS,None,Ingested failed payment record,0,PASS,,PENDING
+pay_8aRUhR4IWrXPvh,2026-08-04 14:56:00,EXHAUSTED,INSUFFICIENT_FUNDS,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_1Ztpdp4K8ffUF0,2026-08-08 12:04:00,INGESTION,NETWORK_TIMEOUT,None,Ingested failed payment record,0,PASS,,PENDING
+pay_1Ztpdp4K8ffUF0,2026-08-08 12:05:00,MOCK_PAYMENT_ATTEMPT,NETWORK_TIMEOUT,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry failed. Giving up.,EXHAUSTED
+pay_vbLJoLoaeTOdoe,2026-08-24 09:43:00,INGESTION,INSUFFICIENT_FUNDS,None,Ingested failed payment record,0,PASS,,PENDING
+pay_vbLJoLoaeTOdoe,2026-08-24 09:43:00,EXHAUSTED,INSUFFICIENT_FUNDS,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_PPgdzUvZ3gpmmI,2026-08-06 15:00:00,INGESTION,CARD_EXPIRED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_PPgdzUvZ3gpmmI,2026-08-06 15:00:00,EXHAUSTED,CARD_EXPIRED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_yq7YYDsBS9UYJQ,2026-08-08 15:07:00,INGESTION,NETWORK_TIMEOUT,None,Ingested failed payment record,0,PASS,,PENDING
+pay_yq7YYDsBS9UYJQ,2026-08-08 15:08:00,MOCK_PAYMENT_ATTEMPT,NETWORK_TIMEOUT,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry succeeded,RECOVERED
+pay_84KpLMcNfAQLKH,2026-08-12 13:10:00,INGESTION,CARD_EXPIRED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_84KpLMcNfAQLKH,2026-08-12 13:10:00,EXHAUSTED,CARD_EXPIRED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_C1ITtNZPHaQ0Jt,2026-08-02 09:21:00,INGESTION,CARD_EXPIRED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_C1ITtNZPHaQ0Jt,2026-08-02 09:21:00,EXHAUSTED,CARD_EXPIRED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_XiOqkVCJTBJahe,2026-08-24 11:59:00,INGESTION,MANDATE_REVOKED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_XiOqkVCJTBJahe,2026-08-24 11:59:00,EXHAUSTED,MANDATE_REVOKED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_7p3kZZl4AblV7v,2026-08-13 14:17:00,INGESTION,MANDATE_REVOKED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_7p3kZZl4AblV7v,2026-08-13 14:17:00,EXHAUSTED,MANDATE_REVOKED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_3e9XrwPGzR1Iv8,2026-08-24 20:42:00,INGESTION,NETWORK_TIMEOUT,None,Ingested failed payment record,0,PASS,,PENDING
+pay_3e9XrwPGzR1Iv8,2026-08-24 20:43:00,MOCK_PAYMENT_ATTEMPT,NETWORK_TIMEOUT,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry succeeded,RECOVERED
+pay_mxBe8Q6vNuQ2hU,2026-08-20 19:20:00,INGESTION,INSUFFICIENT_FUNDS,None,Ingested failed payment record,0,PASS,,PENDING
+pay_mxBe8Q6vNuQ2hU,2026-08-20 19:20:00,EXHAUSTED,INSUFFICIENT_FUNDS,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_DCCRnGEY59YVkQ,2026-08-13 12:09:00,INGESTION,CARD_EXPIRED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_DCCRnGEY59YVkQ,2026-08-13 12:09:00,EXHAUSTED,CARD_EXPIRED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_PSa5W3X4gXBolZ,2026-08-16 16:16:00,INGESTION,CHECKOUT_ABANDONED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_PSa5W3X4gXBolZ,2026-08-16 16:16:00,EXHAUSTED,CHECKOUT_ABANDONED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_Wp1OrXXHFOprCe,2026-08-13 16:00:00,INGESTION,BANK_DECLINE_RISK,None,Ingested failed payment record,0,PASS,,PENDING
+pay_Wp1OrXXHFOprCe,2026-08-13 16:01:00,MOCK_PAYMENT_ATTEMPT,BANK_DECLINE_RISK,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry failed. Giving up.,EXHAUSTED
+pay_8wtWy2591AIVVI,2026-08-15 11:03:00,INGESTION,BANK_DECLINE_RISK,None,Ingested failed payment record,0,PASS,,PENDING
+pay_8wtWy2591AIVVI,2026-08-15 11:04:00,MOCK_PAYMENT_ATTEMPT,BANK_DECLINE_RISK,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry failed. Giving up.,EXHAUSTED
+pay_qyunDuvW4yrW81,2026-08-07 16:44:00,INGESTION,BANK_DECLINE_RISK,None,Ingested failed payment record,0,PASS,,PENDING
+pay_qyunDuvW4yrW81,2026-08-07 16:45:00,MOCK_PAYMENT_ATTEMPT,BANK_DECLINE_RISK,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry failed. Giving up.,EXHAUSTED
+pay_qXxkMM9VThX0k9,2026-08-14 19:23:00,INGESTION,NETWORK_TIMEOUT,None,Ingested failed payment record,0,PASS,,PENDING
+pay_qXxkMM9VThX0k9,2026-08-14 19:24:00,MOCK_PAYMENT_ATTEMPT,NETWORK_TIMEOUT,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry failed. Giving up.,EXHAUSTED
+pay_eGPva2A0FgB9xO,2026-08-19 18:42:00,INGESTION,MANDATE_REVOKED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_eGPva2A0FgB9xO,2026-08-19 18:42:00,EXHAUSTED,MANDATE_REVOKED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_yvbF2ulFnwZqvr,2026-08-22 18:23:00,INGESTION,INSUFFICIENT_FUNDS,None,Ingested failed payment record,0,PASS,,PENDING
+pay_yvbF2ulFnwZqvr,2026-08-22 18:23:00,EXHAUSTED,INSUFFICIENT_FUNDS,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_EJHwBVJvwSDrtq,2026-08-18 11:17:00,INGESTION,CARD_EXPIRED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_EJHwBVJvwSDrtq,2026-08-18 11:17:00,EXHAUSTED,CARD_EXPIRED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_cdJsS8iO3WFg3a,2026-08-25 15:38:00,INGESTION,CARD_EXPIRED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_cdJsS8iO3WFg3a,2026-08-25 15:38:00,EXHAUSTED,CARD_EXPIRED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_MYNoXHyC6Ct3LB,2026-08-10 20:55:00,INGESTION,INSUFFICIENT_FUNDS,None,Ingested failed payment record,0,PASS,,PENDING
+pay_MYNoXHyC6Ct3LB,2026-08-10 20:55:00,EXHAUSTED,INSUFFICIENT_FUNDS,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_DeRo7qYYOLQZ7m,2026-08-03 18:02:00,INGESTION,CHECKOUT_ABANDONED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_DeRo7qYYOLQZ7m,2026-08-03 18:02:00,EXHAUSTED,CHECKOUT_ABANDONED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_4BVuMqbfo9R13K,2026-08-11 15:44:00,INGESTION,MANDATE_REVOKED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_4BVuMqbfo9R13K,2026-08-11 15:44:00,EXHAUSTED,MANDATE_REVOKED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_FsQ8z0WJcDfuqu,2026-08-01 19:38:00,INGESTION,INVALID_VPA,None,Ingested failed payment record,0,PASS,,PENDING
+pay_FsQ8z0WJcDfuqu,2026-08-01 19:38:00,EXHAUSTED,INVALID_VPA,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_ZpTktJaJAfo16h,2026-08-26 17:17:00,INGESTION,CHECKOUT_ABANDONED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_ZpTktJaJAfo16h,2026-08-26 17:17:00,EXHAUSTED,CHECKOUT_ABANDONED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_0asUt1LLQF3jCI,2026-08-02 11:32:00,INGESTION,NETWORK_TIMEOUT,None,Ingested failed payment record,0,PASS,,PENDING
+pay_0asUt1LLQF3jCI,2026-08-02 11:33:00,MOCK_PAYMENT_ATTEMPT,NETWORK_TIMEOUT,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry succeeded,RECOVERED
+pay_9Lv3g32CgH6DaU,2026-08-08 19:43:00,INGESTION,CARD_EXPIRED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_9Lv3g32CgH6DaU,2026-08-08 19:43:00,EXHAUSTED,CARD_EXPIRED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_6soVfBgWOT3gCk,2026-08-15 19:16:00,INGESTION,BANK_DECLINE_RISK,None,Ingested failed payment record,0,PASS,,PENDING
+pay_6soVfBgWOT3gCk,2026-08-15 19:17:00,MOCK_PAYMENT_ATTEMPT,BANK_DECLINE_RISK,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry failed. Giving up.,EXHAUSTED
+pay_DqQa5ZD5sRIkeC,2026-08-25 20:03:00,INGESTION,MANDATE_REVOKED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_DqQa5ZD5sRIkeC,2026-08-25 20:03:00,EXHAUSTED,MANDATE_REVOKED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_6MVF155sXZoMZw,2026-08-05 21:34:00,INGESTION,INSUFFICIENT_FUNDS,None,Ingested failed payment record,0,PASS,,PENDING
+pay_6MVF155sXZoMZw,2026-08-05 21:34:00,EXHAUSTED,INSUFFICIENT_FUNDS,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_4xHG6r1kq608E9,2026-08-22 20:43:00,INGESTION,MANDATE_REVOKED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_4xHG6r1kq608E9,2026-08-22 20:43:00,EXHAUSTED,MANDATE_REVOKED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_qLy0O8xgRoEbN4,2026-08-24 20:34:00,INGESTION,CARD_EXPIRED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_qLy0O8xgRoEbN4,2026-08-24 20:34:00,EXHAUSTED,CARD_EXPIRED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_ALVUj4APg1FNA8,2026-08-21 18:01:00,INGESTION,INVALID_VPA,None,Ingested failed payment record,0,PASS,,PENDING
+pay_ALVUj4APg1FNA8,2026-08-21 18:01:00,EXHAUSTED,INVALID_VPA,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_dYvpiYKne1WJnL,2026-08-09 09:08:00,INGESTION,INSUFFICIENT_FUNDS,None,Ingested failed payment record,0,PASS,,PENDING
+pay_dYvpiYKne1WJnL,2026-08-09 09:08:00,EXHAUSTED,INSUFFICIENT_FUNDS,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_VAHhVeECXxGLgC,2026-08-05 13:39:00,INGESTION,INSUFFICIENT_FUNDS,None,Ingested failed payment record,0,PASS,,PENDING
+pay_VAHhVeECXxGLgC,2026-08-05 13:39:00,EXHAUSTED,INSUFFICIENT_FUNDS,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_OLJTuyMHsDGMBg,2026-08-03 10:53:00,INGESTION,CHECKOUT_ABANDONED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_OLJTuyMHsDGMBg,2026-08-03 10:53:00,EXHAUSTED,CHECKOUT_ABANDONED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_ffBgVVxZiJdL9J,2026-08-25 13:36:00,INGESTION,CHECKOUT_ABANDONED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_ffBgVVxZiJdL9J,2026-08-25 13:36:00,EXHAUSTED,CHECKOUT_ABANDONED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_oZB2JX0NNRPJbM,2026-08-06 14:19:00,INGESTION,CHECKOUT_ABANDONED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_oZB2JX0NNRPJbM,2026-08-06 14:19:00,EXHAUSTED,CHECKOUT_ABANDONED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_UuX8KMf4djkWNd,2026-08-10 12:49:00,INGESTION,MANDATE_REVOKED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_UuX8KMf4djkWNd,2026-08-10 12:49:00,EXHAUSTED,MANDATE_REVOKED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_iWqsuhaFVBliyI,2026-08-26 18:29:00,INGESTION,BANK_DECLINE_RISK,None,Ingested failed payment record,0,PASS,,PENDING
+pay_iWqsuhaFVBliyI,2026-08-26 18:30:00,MOCK_PAYMENT_ATTEMPT,BANK_DECLINE_RISK,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry succeeded,RECOVERED
+pay_1S6xfB2gpBLzHf,2026-08-05 21:48:00,INGESTION,INVALID_VPA,None,Ingested failed payment record,0,PASS,,PENDING
+pay_1S6xfB2gpBLzHf,2026-08-05 21:48:00,EXHAUSTED,INVALID_VPA,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_Pel8XOFDWKWLCR,2026-08-03 18:38:00,INGESTION,NETWORK_TIMEOUT,None,Ingested failed payment record,0,PASS,,PENDING
+pay_Pel8XOFDWKWLCR,2026-08-03 18:39:00,MOCK_PAYMENT_ATTEMPT,NETWORK_TIMEOUT,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry succeeded,RECOVERED
+pay_GyDLJ9YV5cC6ZK,2026-08-14 21:21:00,INGESTION,MANDATE_REVOKED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_GyDLJ9YV5cC6ZK,2026-08-14 21:21:00,EXHAUSTED,MANDATE_REVOKED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_RMdYOPvevgJRys,2026-08-23 20:43:00,INGESTION,INSUFFICIENT_FUNDS,None,Ingested failed payment record,0,PASS,,PENDING
+pay_RMdYOPvevgJRys,2026-08-23 20:43:00,EXHAUSTED,INSUFFICIENT_FUNDS,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_6HfPQBGxbxtl8n,2026-08-25 18:51:00,INGESTION,CHECKOUT_ABANDONED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_6HfPQBGxbxtl8n,2026-08-25 18:51:00,EXHAUSTED,CHECKOUT_ABANDONED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_5kUCcAxRUpCNsW,2026-08-02 19:30:00,INGESTION,MANDATE_REVOKED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_5kUCcAxRUpCNsW,2026-08-02 19:30:00,EXHAUSTED,MANDATE_REVOKED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_3xJ7gT2H2hsfWk,2026-08-05 09:18:00,INGESTION,NETWORK_TIMEOUT,None,Ingested failed payment record,0,PASS,,PENDING
+pay_3xJ7gT2H2hsfWk,2026-08-05 09:19:00,MOCK_PAYMENT_ATTEMPT,NETWORK_TIMEOUT,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry failed. Giving up.,EXHAUSTED
+pay_61ES1iWTECNa5f,2026-08-17 18:15:00,INGESTION,BANK_DECLINE_RISK,None,Ingested failed payment record,0,PASS,,PENDING
+pay_61ES1iWTECNa5f,2026-08-17 18:16:00,MOCK_PAYMENT_ATTEMPT,BANK_DECLINE_RISK,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry succeeded,RECOVERED
+pay_TjsBaNwpKAlQQf,2026-08-12 17:21:00,INGESTION,CHECKOUT_ABANDONED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_TjsBaNwpKAlQQf,2026-08-12 17:21:00,EXHAUSTED,CHECKOUT_ABANDONED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_0Pl1XRDSEOlZie,2026-08-26 14:27:00,INGESTION,CHECKOUT_ABANDONED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_0Pl1XRDSEOlZie,2026-08-26 14:27:00,EXHAUSTED,CHECKOUT_ABANDONED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_4zVC59yvlFSFx7,2026-08-14 13:40:00,INGESTION,INVALID_VPA,None,Ingested failed payment record,0,PASS,,PENDING
+pay_4zVC59yvlFSFx7,2026-08-14 13:40:00,EXHAUSTED,INVALID_VPA,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_Y8deQOzxGZVRk8,2026-08-13 14:41:00,INGESTION,INSUFFICIENT_FUNDS,None,Ingested failed payment record,0,PASS,,PENDING
+pay_Y8deQOzxGZVRk8,2026-08-13 14:41:00,EXHAUSTED,INSUFFICIENT_FUNDS,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_rp9hbVlFHy6Jhq,2026-08-06 20:45:00,INGESTION,INSUFFICIENT_FUNDS,None,Ingested failed payment record,0,PASS,,PENDING
+pay_rp9hbVlFHy6Jhq,2026-08-06 20:45:00,EXHAUSTED,INSUFFICIENT_FUNDS,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_7SOlYxGohmYipY,2026-08-12 11:56:00,INGESTION,BANK_DECLINE_RISK,None,Ingested failed payment record,0,PASS,,PENDING
+pay_7SOlYxGohmYipY,2026-08-12 11:57:00,MOCK_PAYMENT_ATTEMPT,BANK_DECLINE_RISK,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry failed. Giving up.,EXHAUSTED
+pay_1XJOLlX9iBG63d,2026-08-19 11:10:00,INGESTION,NETWORK_TIMEOUT,None,Ingested failed payment record,0,PASS,,PENDING
+pay_1XJOLlX9iBG63d,2026-08-19 11:11:00,MOCK_PAYMENT_ATTEMPT,NETWORK_TIMEOUT,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry failed. Giving up.,EXHAUSTED
+pay_QNU5Mv17Kc03bf,2026-08-06 16:26:00,INGESTION,INSUFFICIENT_FUNDS,None,Ingested failed payment record,0,PASS,,PENDING
+pay_QNU5Mv17Kc03bf,2026-08-06 16:26:00,EXHAUSTED,INSUFFICIENT_FUNDS,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_EDnvMju3TuU3wz,2026-08-16 17:29:00,INGESTION,BANK_DECLINE_RISK,None,Ingested failed payment record,0,PASS,,PENDING
+pay_EDnvMju3TuU3wz,2026-08-16 17:30:00,MOCK_PAYMENT_ATTEMPT,BANK_DECLINE_RISK,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry failed. Giving up.,EXHAUSTED
+pay_F4tFbf8zGD9pnL,2026-08-13 17:28:00,INGESTION,INVALID_VPA,None,Ingested failed payment record,0,PASS,,PENDING
+pay_F4tFbf8zGD9pnL,2026-08-13 17:28:00,EXHAUSTED,INVALID_VPA,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_WJr0NRNhigzxYv,2026-08-10 18:21:00,INGESTION,MANDATE_REVOKED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_WJr0NRNhigzxYv,2026-08-10 18:21:00,EXHAUSTED,MANDATE_REVOKED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_G1GIFTKtE0bxvR,2026-08-19 20:07:00,INGESTION,NETWORK_TIMEOUT,None,Ingested failed payment record,0,PASS,,PENDING
+pay_G1GIFTKtE0bxvR,2026-08-19 20:08:00,MOCK_PAYMENT_ATTEMPT,NETWORK_TIMEOUT,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry succeeded,RECOVERED
+pay_mbCuAjASnAGXN6,2026-08-09 17:19:00,INGESTION,INSUFFICIENT_FUNDS,None,Ingested failed payment record,0,PASS,,PENDING
+pay_mbCuAjASnAGXN6,2026-08-09 17:19:00,EXHAUSTED,INSUFFICIENT_FUNDS,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_o8tXsTnSTFuEwJ,2026-08-18 13:59:00,INGESTION,CARD_EXPIRED,None,Ingested failed payment record,0,PASS,,PENDING
+pay_o8tXsTnSTFuEwJ,2026-08-18 13:59:00,EXHAUSTED,CARD_EXPIRED,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_JSrigNVLppdQ5H,2026-08-25 10:41:00,INGESTION,BANK_DECLINE_RISK,None,Ingested failed payment record,0,PASS,,PENDING
+pay_JSrigNVLppdQ5H,2026-08-25 10:42:00,MOCK_PAYMENT_ATTEMPT,BANK_DECLINE_RISK,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry failed. Giving up.,EXHAUSTED
+pay_KoIVU27c66lA41,2026-08-07 21:07:00,INGESTION,BANK_DECLINE_RISK,None,Ingested failed payment record,0,PASS,,PENDING
+pay_KoIVU27c66lA41,2026-08-07 21:08:00,MOCK_PAYMENT_ATTEMPT,BANK_DECLINE_RISK,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry failed. Giving up.,EXHAUSTED
+pay_vkUDPqTlaVvYsK,2026-08-19 09:16:00,INGESTION,NETWORK_TIMEOUT,None,Ingested failed payment record,0,PASS,,PENDING
+pay_vkUDPqTlaVvYsK,2026-08-19 09:17:00,MOCK_PAYMENT_ATTEMPT,NETWORK_TIMEOUT,Naive Retry,Triggered automated retry on gateway,1,PASS,Naive blind retry succeeded,RECOVERED
+pay_PxSpdQhDtkzRG7,2026-08-17 16:33:00,INGESTION,INSUFFICIENT_FUNDS,None,Ingested failed payment record,0,PASS,,PENDING
+pay_PxSpdQhDtkzRG7,2026-08-17 16:33:00,EXHAUSTED,INSUFFICIENT_FUNDS,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED
+pay_Txe6Khd1J5GmKI,2026-08-01 20:13:00,INGESTION,INSUFFICIENT_FUNDS,None,Ingested failed payment record,0,PASS,,PENDING
+pay_Txe6Khd1J5GmKI,2026-08-01 20:13:00,EXHAUSTED,INSUFFICIENT_FUNDS,Decline Check,No retry attempted for non-transient decline code,0,PASS,Naive engine ignored this error class,EXHAUSTED

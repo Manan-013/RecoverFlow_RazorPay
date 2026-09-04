@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.class
+
+# Environments & credentials
+.env
+.env.*
+*.env
+*.key
+*.pem
+*.cert
+secrets.json
+credentials.json
+
+# Secret and test keys
+rzp-test-key.csv
+rzp-test-key.csv*
+*rzp*key*
+*test-key*
+*.bak
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+
+# OS files
+Thumbs.db
+.DS_Store
