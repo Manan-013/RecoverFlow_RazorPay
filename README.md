@@ -51,43 +51,46 @@ The system is split into four distinct layers: Webhook Ingestion, Regulatory Dec
 
 ```mermaid
 graph TD
-    subgraph Ingestion ["1. Webhook Ingestion & Auth"]
-        W[Razorpay Webhook Event] -->|HMAC-SHA256 Sig Verify| IN[Ingestion Gate]
-        IN -->|Valid Payload| TX_DB[(Failed Transactions DB)]
+    subgraph Ingestion ["1. Webhook Ingestion and Auth"]
+        W["Razorpay Webhook Event"] -->|HMAC-SHA256 Sig Verify| IN["Ingestion Gate"]
+        IN -->|Valid Payload| TX_DB[("Failed Transactions DB")]
     end
 
-    subgraph Decision ["2. Cognitive & Regulatory Decisioning"]
-        TX_DB -->|Load Record| DE[Diagnostic Engine]
-        DE -->|Map Failure Code| TAX[Taxonomy Mappings]
-        TAX --> CG{Compliance Gate}
-        CG -->|1. Opt-Out Checked| CG_OOP[Escalate to Manual]
-        CG -->|2. Max 3 Retries Checked| CG_EXH[Exhausted Lock]
-        CG -->|3. Quiet Hours 8PM-8AM| CG_QH[Reschedule/Delay]
-        CG -->|4. 24h Cooling-Off| CG_CO[Reschedule/Delay]
-        CG -->|Pass Gates| OUT_SCH[Schedule Outreach]
+    subgraph Decision ["2. Cognitive and Regulatory Decisioning"]
+        TX_DB -->|Load Record| DE["Diagnostic Engine"]
+        DE -->|Map Failure Code| TAX["Taxonomy Mappings"]
+        TAX --> CG{"Compliance Gate"}
+        CG -->|1. Opt-Out Checked| CG_OOP["Escalate to Manual"]
+        CG -->|2. Max 3 Retries Checked| CG_EXH["Exhausted Lock"]
+        CG -->|3. Quiet Hours 8PM-8AM| CG_QH["Reschedule or Delay"]
+        CG -->|4. 24h Cooling-Off| CG_CO["Reschedule or Delay"]
+        CG -->|Pass Gates| OUT_SCH["Schedule Outreach"]
     end
 
     subgraph Brain ["3. Generative AI Vernacular Brain"]
-        OUT_SCH -->|Trigger Prompt| ROUTER{AI Router}
-        ROUTER -->|Gemini Key| GEMINI[Google Gemini Flash / Multimodal Audio]
-        ROUTER -->|Offline / No Key| MOCK[Local Contextual Fallback Engine]
+        OUT_SCH -->|Trigger Prompt| ROUTER{"AI Router"}
+        ROUTER -->|Gemini Key| GEMINI["Google Gemini Flash / Multimodal Audio"]
+        ROUTER -->|Offline or No Key| MOCK["Local Contextual Fallback Engine"]
         
-        GEMINI & MOCK -->|Adaptive English/Hinglish/Hindi| OUT_DEL[Outreach Dispatcher]
+        GEMINI -->|Adaptive Language Matching| OUT_DEL["Outreach Dispatcher"]
+        MOCK -->|Adaptive Language Matching| OUT_DEL
     end
 
     subgraph Channels ["4. Compliant Delivery Channels"]
-        OUT_DEL -->|WhatsApp Bubble| WA[WhatsApp Chat UI]
-        OUT_DEL -->|Transactional SMS| SMS[SMS Inbox UI]
-        OUT_DEL -->|Interactive Voice Call| IVR[IVR Voice TTS + Native Mic Input]
+        OUT_DEL -->|WhatsApp Bubble| WA["WhatsApp Chat UI"]
+        OUT_DEL -->|Transactional SMS| SMS["SMS Inbox UI"]
+        OUT_DEL -->|Interactive Voice Call| IVR["IVR Voice TTS + Native Mic Input"]
     end
 
-    subgraph Loop ["5. Customer Action & Closure"]
-        WA & SMS & IVR -->|Customer Reply (Text or Audio)| INT_CL{Single-Pass Intent & Multimodal Classifier}
-        INT_CL -->|Promise to Pay| PTP[Reschedule for Promised Date]
-        INT_CL -->|Opt-Out / Refusal| CG_OOP
-        INT_CL -->|Link Click & Pay| WEB_MOCK[Webhook Payment Event]
-        WEB_MOCK -->|Status Update| REC[RECOVERED State]
-        REC -->|Write Audit Entry| LEDGER[(forensic_ledger.csv)]
+    subgraph Loop ["5. Customer Action and Closure"]
+        WA -->|Customer Reply - Text or Audio| INT_CL{"Single-Pass Intent and Multimodal Classifier"}
+        SMS -->|Customer Reply - Text or Audio| INT_CL
+        IVR -->|Customer Reply - Text or Audio| INT_CL
+        INT_CL -->|Promise to Pay| PTP["Reschedule for Promised Date"]
+        INT_CL -->|Opt-Out or Refusal| CG_OOP
+        INT_CL -->|Link Click and Pay| WEB_MOCK["Webhook Payment Event"]
+        WEB_MOCK -->|Status Update| REC["RECOVERED State"]
+        REC -->|Write Audit Entry| LEDGER[("forensic_ledger.csv")]
     end
 ```
 
@@ -104,7 +107,7 @@ stateDiagram-v2
     
     state Nudge_Cycle {
         PENDING --> NUDGE_CHECK: Check Compliance Gates
-        NUDGE_CHECK --> PENDING: [Blocked] NPCI Quiet Hours (Queue/Delay to 8 AM)
+        NUDGE_CHECK --> PENDING: [Blocked] NPCI Quiet Hours (Queue to 8 AM)
         NUDGE_CHECK --> PENDING: [Blocked] 24h Cooling-Off (Queue/Delay)
         NUDGE_CHECK --> OUTBOUND_NUDGE: [Passed] Send Vernacular Message
     }
@@ -117,12 +120,12 @@ stateDiagram-v2
     CUSTOMER_WAIT --> ESCALATED: Customer demands STOP (Opt-Out)
     note right of ESCALATED: Strict Consent Revocation & Chat Lockout
     
-    CUSTOMER_WAIT --> MOCK_PAYMENT_ATTEMPT: Customer clicks Link & Authorizes
+    CUSTOMER_WAIT --> MOCK_PAYMENT_ATTEMPT: Customer clicks Link and Authorizes
     
     MOCK_PAYMENT_ATTEMPT --> RECOVERED: Payment Successful (Charge webhook clears)
-    MOCK_PAYMENT_ATTEMPT --> PENDING: Payment Failed (Attempts < 3)
+    MOCK_PAYMENT_ATTEMPT --> PENDING: Payment Failed (Attempts below 3)
     
-    MOCK_PAYMENT_ATTEMPT --> EXHAUSTED: Payment Failed (Attempts >= 3)
+    MOCK_PAYMENT_ATTEMPT --> EXHAUSTED: Payment Failed (Attempts 3 or more)
     note right of EXHAUSTED: Permanent Mandate Lock
     
     RECOVERED --> [*]
