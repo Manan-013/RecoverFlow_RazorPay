@@ -3,6 +3,8 @@
 **Razorpay AI Buildathon 2026 Submission**  
 *Track 3: AI Revenue Recovery — Failed Payment and Subscription Mandate Rescue*
 
+**Live Deployed Application:** [https://recoverflow-ai.streamlit.app](https://recoverflow-ai.streamlit.app)
+
 ---
 
 ## Headline Performance Results
@@ -221,6 +223,7 @@ To adhere to **"The Bar"** specified in the Buildathon brief, the **Compliance G
 
 ## Deployed Link & Self-Hosting Guide
 
+* **Live Cloud Deployment:** [https://recoverflow-ai.streamlit.app](https://recoverflow-ai.streamlit.app)
 * **Local Dev Server:** [http://localhost:8501](http://localhost:8501)
 * **Self-Hosting Guide:** To deploy the Streamlit dashboard on a cloud host (Streamlit Community Cloud, Heroku, or AWS EC2), ensure the environment variable `GEMINI_API_KEY` is configured in your secrets manager.
 
